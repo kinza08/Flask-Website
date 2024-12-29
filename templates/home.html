@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross and Fit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header">
+        <!-- ////navbar//// -->
+        <nav id="navbar">
+            <a href="{{ url_for('home') }}" class="logo"><img src="assets/images/logo.png" alt=""><i class="fa-solid fa-person-walking"></i> CrossFit </a>
+            <div class="nav-links" id="navLinks">
+                <ul id="menu">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('membership') }}">Membership</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <a href="{{ url_for('login') }}" class="hero-btn">Login/Signup</a>
+                </ul>
+            </div>
+        </nav>
+     <!-- ////navbar//// -->
+     <div class="text-box">
+        <h1>Crush your health and fitness <br> goals in no time</h1>
+       <br><br>
+       <a href="{{ url_for('about') }}" class="hero-btn">Visit us to know More</a>
+     </div>   
+    </section>
+
+    <section class="offer">
+        <br><br>
+        <h1 style="color: white; text-align: center; font-size: 40px;">We Offer Something  <br>for Everybody</h1>
+        <div class="row">
+            <div class="ser-col1">
+                <h3>Group Classes</h3>
+            </div>
+            <div class="ser-col2">
+                <h3>Personal Training</h3>
+            </div>
+            <div class="ser-col3">
+                <h3>Strength Training</h3>
+            </div>
+            <div class="ser-col4">
+                <h3>Member Only Events</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="group">
+        <div class="group1">
+            <h1>Crush your health and fitness <br> with Group of Friends</h1>
+            <p><i class="fa-regular fa-circle-check"></i>  Just 30 minutes long</p>
+            <p><i class="fa-regular fa-circle-check"></i>  Fun is guaranteed</p>
+            <p><i class="fa-regular fa-circle-check"></i>  Warm up & workout included</p>
+            <p><a href="{{ url_for('login') }}" class="hero-btn">Join Now</a></p>
+        </div>
+        <div class="group2"></div>
+    </section>
+
+    <section class="stren">
+        <div class="stren1"></div>
+        <div class="stren2">
+            <h1>Be guided every step of the way with one of our world class coaches</h1>
+            <p><i class="fa-regular fa-circle-check"></i>  WeightLoss</p>
+            <p><i class="fa-regular fa-circle-check"></i> Competitive Challenges</p>
+            <p><i class="fa-regular fa-circle-check"></i> WeightLifting</p>
+            <p><a href="{{ url_for('login') }}" class="hero-btn">Join Now</a></p>
+        </div>
+    </section>
+
+   
+
+    <section class="footer"><br><br>
+        <footer>
+            Copyright © 2023 . All Rights Reserved. <br>
+            made By Kinza Sheikh
+        </footer>
+    </section>
+</body>
+</html>
